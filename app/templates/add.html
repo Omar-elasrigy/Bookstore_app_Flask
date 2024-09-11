@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% from 'bootstrap5/form.html' import render_form %}
+
+{% block title %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/add.css') }}">
+
+{%endblock%}
+
+{% block main %}
+
+<div class="  d-flex flex-column justify-content-center">
+    <h1>Please Enter Book Details </h1>
+    <div class="parentDiv">{{ render_form(form) }}</div>
+</div>
+
+{%endblock%}
